@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 10px;
+            background-color: pink;
+            width: 100%;
+            height: 120px;
+            border: 2px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 10px;
+            position: fixed;
+            font-size: 40px;
+            background-image: url();
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        h2{
+            margin: 0;
+        }
+        .ordercake{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            height: 700px;
+            gap: 20px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .cake{
+            justify-self: start;
+            align-items: start;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #fff;
+            height: 400px;
+            width: 300px;
+            margin-left: 40px;
+            margin-top: 30%;
+        }
+        .cake img{
+            width: 100%;
+            height: 300px;
+        }
+                .bread :hover{
+            transform: scale(1.1);
+        }
+        #leave{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        #leave:hover{
+            background-color: #3e8e41;
+        }
+        #add{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #add:hover{
+            background-color: #3e8e41;
+        }
+        #number{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #number:hover{
+            background-color: #3e8e41;
+        }
+        #buy{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #buy:hover{
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Order Cake</h2>
+    </header>
+    <main>
+        <section class="ordercake">
+            <div class="cake">
+                <img src="https://bakingamoment.com/wp-content/uploads/2023/07/IMG_2051-ice-cream-cake.jpg" alt="">
+                <p>price = 4$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="cake">
+                <img src="https://static01.nyt.com/images/2023/10/27/multimedia/27cakerex-plzm/27cakerex-plzm-mediumSquareAt3X.jpg" alt="">
+                <p>price = 3$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="cake">
+                <img src="https://www.thecountrycook.net/wp-content/uploads/2023/04/thumbnail-Homemade-Yellow-Cake-scaled.jpg" alt="">
+                <p>price = 2$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="cake">
+                <img src="https://www.dessertfortwo.com/wp-content/uploads/2022/10/Matcha-Cake-9.jpg" alt="">
+                <p>price = 3$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

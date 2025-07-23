@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 10px;
+            background-color: pink;
+            width: 100%;
+            height: 120px;
+            border: 2px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 10px;
+            position: fixed;
+            font-size: 40px;
+            background-image: url();
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        h2{
+            margin: 0;
+        }
+        .ordercoffee{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            height: 700px;
+            gap: 20px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .coffee{
+            justify-self: start;
+            align-items: start;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #fff;
+            height: 400px;
+            width: 300px;
+            margin-left: 40px;
+            margin-top: 30%;
+        }
+        .coffee img{
+            width: 100%;
+            height: 300px;
+        }
+        .coffee :hover{
+            transform: scale(1.1);
+        }
+        #leave{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        #leave:hover{
+            background-color: #3e8e41;
+        }
+        #add{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+         #add:hover{
+            background-color: #3e8e41;
+        }
+        #number{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #number:hover{
+            background-color: #3e8e41;
+        }
+        #buy{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #buy:hover{
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Order Coffee</h2>
+    </header>
+    <main>
+        <section class="ordercoffee">
+            <div class="coffee">
+                <img src="https://corkframes.com/cdn/shop/articles/Corkframes_Coffee_Guide_520x500_422ebe38-4cfa-42b5-a266-b9bfecabaf30.jpg?v=1734598727" alt="">
+                <p>price = 3$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="coffee">
+                <img src="https://cafebarista.ca/cdn/shop/articles/comment-faire-un-aerocano-en-5-etapes-786849.jpg?v=1737725047" alt="">
+                <p>price = 2$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="coffee">
+                <img src="https://www.webstaurantstore.com/images/products/large/593150/2170379.jpg" alt="">
+                <p>price = 3$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="coffee">
+                <img src="https://www.gradyhealth.org/wp-content/uploads/Easy-2-Ingredient-Watermelon-Smoothie.png" alt="">
+                <p>price = 2$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+            <div class="coffee">
+                <img src="https://www.liveeatlearn.com/wp-content/uploads/2019/07/strawberry-banana-smoothie-vert1200.jpg" alt="">
+                <p>price = 3$</p>
+                <button id="leave">-</button>
+                <button id="number">0</button>
+                <button id="add">+</button>
+                <button id="buy">Buy</button>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
